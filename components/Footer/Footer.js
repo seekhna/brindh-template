@@ -7,11 +7,15 @@ import classNames from "classnames";
 // material-ui core components
 import { List, ListItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import Tooltip from "@material-ui/core/Tooltip";
+
+import Button from "components/CustomButtons/Button.js";
 
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 
 import styles from "assets/jss/nextjs-material-kit/components/footerStyle.js";
+import { Facebook, Instagram, Twitter } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
@@ -33,53 +37,43 @@ export default function Footer(props) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/?ref=njsmk-footer"
+                href="https://twitter.com/brindhavan?ref=brindhavan"
                 className={classes.block}
                 target="_blank"
               >
-                Creative Tim
+                <Twitter className={classes.icon} />
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/presentation?ref=njsmk-footer"
+                href="https://www.facebook.com/brindhavan?ref=brindhavan"
                 className={classes.block}
                 target="_blank"
               >
-                About us
+                <Facebook className={classes.icon} />
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="http://blog.creative-tim.com/?ref=njsmk-footer"
+                href="https://www.instagram.com/brindhavan?ref=brindhavan"
                 className={classes.block}
                 target="_blank"
               >
-                Blog
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license?ref=njsmk-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
+                <Instagram className={classes.icon} />
               </a>
             </ListItem>
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
+          &copy; {1900 + new Date().getYear()} Made with{" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
-            href="https://www.creative-tim.com?ref=njsmk-footer"
+            href="https://mvb.com"
             className={aClasses}
             target="_blank"
           >
-            Creative Tim
-          </a>{" "}
-          for a better web.
+            Manivishal Burra
+          </a>.
         </div>
       </div>
     </footer>

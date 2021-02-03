@@ -34,13 +34,13 @@ export default function LoginPage(props) {
   const { ...rest } = props;
   return (
     <div>
-      <Header
+      {/* <Header
         absolute
         color="transparent"
         brand="NextJS Material Kit"
         rightLinks={<HeaderLinks />}
         {...rest}
-      />
+      /> */}
       <div
         className={classes.pageHeader}
         style={{
@@ -138,7 +138,7 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button simple color="primary" size="lg">
+                    <Button simple color="primary" size="lg" href="/">
                       Get started
                     </Button>
                   </CardFooter>
@@ -147,7 +147,7 @@ export default function LoginPage(props) {
             </GridItem>
           </GridContainer>
         </div>
-        <Footer whiteFont />
+        {/* <Footer whiteFont /> */}
       </div>
     </div>
   );
