@@ -13,6 +13,7 @@ import Icon from "@material-ui/core/Icon";
 import { Apps, CloudDownload } from "@material-ui/icons";
 import { Help } from "@material-ui/icons";
 import DeleteIcon from "@material-ui/icons/Delete";
+import PersonIcon from '@material-ui/icons/Person';
 import IconButton from "@material-ui/core/IconButton";
 
 // core components
@@ -20,6 +21,7 @@ import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/nextjs-material-kit/components/headerLinksStyle.js";
+import profileImage from "assets/img/faces/avatar.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -85,22 +87,29 @@ export default function HeaderLinks(props) {
         <CustomDropdown
           noLiPadding
           navDropdown
-          buttonText="Surprises"
+          buttonText="Profile"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
           }}
-          buttonIcon={Help}
+          buttonIcon={PersonIcon}
           dropdownList={[
-            <Link href="/surprises">
-              <a className={classes.dropdownLink}>All surprises</a>
+            <Link href="/profile/me">
+              <a className={classes.dropdownLink}>Me</a>
             </Link>,
             <a
-              href="/surprises/guide"
+              href="/settings"
               target="_blank"
               className={classes.dropdownLink}
             >
-              Guide
+              Settings
+            </a>,
+            <a
+              href="/logout"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              Logout
             </a>
           ]}
         />
