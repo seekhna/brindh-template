@@ -49,7 +49,6 @@ export default function HeaderLoginLinks(props) {
         </Button>
       </ListItem>
 
-{/*
       <ListItem className={classes.listItem}>
         <Button
           href="/register"
@@ -60,7 +59,6 @@ export default function HeaderLoginLinks(props) {
           <Icon className={classes.icons}>edit</Icon> Register
         </Button>
       </ListItem>
-*/}
     </List>
   );
 }

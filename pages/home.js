@@ -6,7 +6,7 @@ import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import HeaderLoginLinks from "components/Header/HeaderLoginLinks.js";
+import HeaderLoggedoutLinks from "components/Header/HeaderLoggedoutLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "assets/jss/nextjs-material-kit/pages/landingPage.js";
@@ -24,7 +24,7 @@ export default function Home(props) {
         color="transparent"
         routes={dashboardRoutes}
         brand="brindhavan"
-        rightLinks={<HeaderLoginLinks />}
+        rightLinks={<HeaderLoggedoutLinks />}
         fixed
         changeColorOnScroll={{
           height: 400,
