@@ -26,3 +26,9 @@ yarn-error.log*
 # package
 /dist
 /.next
+
+# vim
+.*.sw?
+
+# environment
+.env
